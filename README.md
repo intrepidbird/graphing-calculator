@@ -1,2 +1,2 @@
-# ~~Desmos~~ IntrepidGraph
-A Mathematical Graphing Calculator.
+# IntrepidGraph
+A Mathematical Graphing Calculator (with CSS this time lol)
