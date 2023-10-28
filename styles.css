@@ -24,7 +24,7 @@ body {
 }
 
 /* Styling for the calculator section with a specific ID */
-#calculator-section {
+#calculator {
     background-color: #f7f7f7;
     padding: 40px;
     border-radius: 10px;
@@ -32,9 +32,9 @@ body {
 }
 
 /* Styling for the graph element with a specific ID */
-#graph-element {
+#graph {
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
 .reset-container{
