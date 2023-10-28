@@ -1,19 +1,11 @@
 /* Set the font for the entire document */
 body {
-    font-family: Inter, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 /* Style for the header */
 header {
     font-weight: 700;
-}
-
-/* Styling for the calculator section */
-#calculator {
-    background-color: #f7f7f7;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for the graph element */
