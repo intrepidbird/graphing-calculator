@@ -44,3 +44,9 @@ body {
     width: 100%;
     height: 400px;
 }
+
+.reset-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
