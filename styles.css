@@ -1,19 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Inter, sans-serif;
 }
 
 header {
-    font-weight: bold;
+    font-weight: 700;
 }
 
-#calculator {
-    background-color: #f7f7f7;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
 
 #graph {
     width: 100%;
-    height: 400px;
+    height: 500px;
+}
+
+
+.btn.btn-primary{
+    margin-right: 10px;
+}
+
+.btn.btn-info{
+    margin-top: 10px;
 }

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -25,8 +27,12 @@
                         <label for="equation">Equation:</label>
                         <input type="text" class="form-control" id="equation" placeholder="Enter equation" required>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Graph</button>
+                    <button type="submit" class="btn btn-primary">Graph</button>
+                    <button type="reset" class="btn btn-outline-secondary">Reset Equation</button>
                 </form>
+
+                <button type="button" class="btn btn-info" id="resetBtn">Reset Graph</button>
+
             </div>
         </div>
         <div class="row mt-5">

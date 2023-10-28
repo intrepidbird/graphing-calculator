@@ -1,5 +1,7 @@
 // calculator.js
 $(document).ready(function() {
+    let chart;
+
     $('#calculatorForm').submit(function(e) {
         e.preventDefault();
         let equation = $('#equation').val();
@@ -12,7 +14,9 @@ $(document).ready(function() {
             yValues.push(eval(equation));
         }
 
-        let chart = new Chart(canvas, {
+        if(chart) chart.destroy();
+
+        chart = new Chart(canvas, {
             type: 'line',
             data: {
                 labels: xValues,
@@ -46,4 +50,9 @@ $(document).ready(function() {
             }
         });
     });
+    
+    $('#resetBtn').on('click', () => {
+        if(chart) chart.destroy();
+    });
+    
 });
