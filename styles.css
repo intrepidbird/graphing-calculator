@@ -1,22 +1,52 @@
+/* Set the font for the entire document */
 body {
     font-family: Inter, sans-serif;
 }
 
+/* Style for the header */
 header {
     font-weight: 700;
 }
 
+/* Styling for the calculator section */
+#calculator {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
+/* Styling for the graph element */
 #graph {
     width: 100%;
     height: 500px;
 }
-
-
-.btn.btn-primary{
-    margin-right: 10px;
+/* Set the font for the entire document */
+body {
+    font-family: Arial, sans-serif;
 }
 
-.btn.btn-info{
+/* Style for the header with a specific class name */
+.header-style {
+    font-weight: bold;
+}
+
+/* Styling for the calculator section with a specific ID */
+#calculator-section {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the graph element with a specific ID */
+#graph-element {
+    width: 100%;
+    height: 400px;
+}
+
+.reset-container{
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
