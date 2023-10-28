@@ -2,6 +2,8 @@
 
 IntrepidGraph is a web-based mathematical graphing calculator that allows you to visualize mathematical equations in the form of graphs. This project contains HTML, CSS, and JavaScript files, along with an "images" folder that holds various images. In this README, we will guide both newcomers and experienced developers through the key aspects of this project.
 
+Please ⭐ our Repository!
+
 ## Table of Contents
 - [IntrepidGraph - A Mathematical Graphing Calculator](#intrepidgraph---a-mathematical-graphing-calculator)
   - [Table of Contents](#table-of-contents)
