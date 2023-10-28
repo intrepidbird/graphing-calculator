@@ -15,7 +15,7 @@ $(document).ready(function() {
         let chart = new Chart(canvas, {
             type: 'line',
             data: {
-                labels: xValues,
+                labels: xValues.map(x => x.toPrecision(3)),
                 datasets: [{
                     label: equation,
                     data: yValues,
