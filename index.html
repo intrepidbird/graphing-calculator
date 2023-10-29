@@ -9,17 +9,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/graph_fav.png" type="image/x-icon">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body >
     <!-- Header Section -->
     <header class="bg-dark text-white text-center p-4">
         <img src="images/graph_fav.png" width="50" height="50">
         <h1>Graphing Calculator</h1>
+        <div class="darkbtn">
+            <button onclick="darkMode()">🌜 Dark Mode</button>
+        </div>
     </header>
+
 
     <div class="nav2">
         <div class="navContent">
@@ -37,6 +44,7 @@
     </div>
 
 
+    
     <!-- Calculator Section -->
     <section id="calculator" class="container mt-5">
         <div class="row justify-content-center">
@@ -59,10 +67,15 @@
                         <input type="number" class="form-control" id="maxX" value="10">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Graph</button>
+                    <div class="reset-container">
+                        <button type="reset" class="btn btn-outline-secondary">Reset Equation</button>
+                        <button type="button" class="btn btn-info" id="resetBtn">Reset Graph</button>
+                    </div>
                 </form>
+
             </div>
         </div>
-        <div class="row mt-4">
+        <div class="row mt-4 graphic-container">
             <div class="col-md-12">
                 <canvas id="graph" class="w-100"></canvas>
             </div>
@@ -85,6 +98,7 @@
 
     <!-- Calculator JS -->
     <script src="calculator.js"></script>
+    
 </body>
 
 </html>

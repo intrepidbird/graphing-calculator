@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    let chart;
+    
     $('#calculatorForm').submit(function(e) {
         e.preventDefault();
         let equations = $('#equations').val().split(','); // Split equations by comma
@@ -48,7 +50,9 @@ $(document).ready(function() {
             }
         }
 
-        let chart = new Chart(canvas, {
+        if (chart) chart.destroy();
+
+        chart = new Chart(canvas, {
             type: 'line',
             data: {
                 labels: xValues,
@@ -75,10 +79,23 @@ $(document).ready(function() {
                 }
             }
         });
+
+        $('.graphic-container').addClass('active');
+    });
+
+    $('#resetBtn').on('click', () => {
+        if (chart) chart.destroy();
+        $('.graphic-container').removeClass('active');
     });
 });
 
 function getRandomColor() {
     // Generates a random hexadecimal color
     return '#' + Math.floor(Math.random()*16777215).toString(16);
+}
+
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 }
