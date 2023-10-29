@@ -42,3 +42,37 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#theme-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Your existing CSS styles... */
+
+/* Style for the header */
+header {
+    font-weight: bold;
+}
+
+/* Styling for the calculator section */
+#calculator {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the graph element */
+#graph {
+    width: 100%;
+    height: 400px;
+}

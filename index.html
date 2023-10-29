@@ -12,14 +12,42 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/graph_fav.png" type="image/x-icon">
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+ 
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+.darkbtn{
+    float: right;
+    margin-top: -40px;
+
+}
+button{
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+}
+    </style>
 </head>
-<body>
+<body >
     <!-- Header Section -->
     <header class="bg-dark text-white text-center p-4">
         <img src="images/graph_fav.png" width="50" height="50">
         <h1>Graphing Calculator</h1>
+        <div class="darkbtn">
+            <button onclick="darkMode()">🌜 Dark Mode</button>
+        </div>
     </header>
-
+    
     <!-- Calculator Section -->
     <section id="calculator" class="container mt-5">
         <div class="row justify-content-center">
@@ -54,6 +82,14 @@
             </div>
         </div>
     </section>
+    
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
 
     <!-- Bootstrap & jQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -61,5 +97,6 @@
 
     <!-- Calculator JS -->
     <script src="calculator.js"></script>
+    
 </body>
 </html>
