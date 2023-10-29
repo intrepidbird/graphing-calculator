@@ -80,13 +80,11 @@ $(document).ready(function() {
             }
         });
 
-        // Adicione a classe "active" quando o gráfico for criado
         $('.graphic-container').addClass('active');
     });
 
     $('#resetBtn').on('click', () => {
         if (chart) chart.destroy();
-        // Remova a classe "active" ao clicar no botão "Reset"
         $('.graphic-container').removeClass('active');
     });
 });
