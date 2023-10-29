@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/graph_fav.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body >
     <!-- Header Section -->
     <header class="bg-dark text-white text-center p-4">
@@ -23,6 +26,24 @@
             <button onclick="darkMode()">🌜 Dark Mode</button>
         </div>
     </header>
+
+
+    <div class="nav2">
+        <div class="navContent">
+            <a class="nav_a" href="index.html">Home</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="">About Us</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="">Contact Us</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="">Login/Signup</a>
+        </div>
+    </div>
+
+
     
     <!-- Calculator Section -->
     <section id="calculator" class="container mt-5">
@@ -32,8 +53,10 @@
                 <form id="calculatorForm">
                     <div class="form-group">
                         <label for="equations">Enter Equations (comma-separated):</label>
-                        <input type="text" class="form-control" id="equations" placeholder="e.g., y = x^2, y = sin(x)" required>
-                        <small class="form-text text-muted">Supported Functions: sin, cos, tan, sqrt, log, exp, pi, e, and more.</small>
+                        <input type="text" class="form-control" id="equations" placeholder="e.g., y = x^2, y = sin(x)"
+                            required>
+                        <small class="form-text text-muted">Supported Functions: sin, cos, tan, sqrt, log, exp, pi, e,
+                            and more.</small>
                     </div>
                     <div class="form-group">
                         <label for="minX">Min X:</label>
@@ -59,6 +82,16 @@
         </div>
     </section>
 
+    <div class="connect">
+        Connect with us <br>
+        © 2023, IntrepidGraph.com
+    </div>
+    <div class="iconAlign">
+        <a href="https://www.instagram.com/9GAG/"><img src="images/instagram-sketched.png" class="icon"></a>
+        <a href="https://www.facebook.com/9gag"><img src="images/facebook.png" class="icon"></a>
+        <a href="https://twitter.com/9GAG"><img src="images/twitter.png" class="icon"></a>
+    </div>
+
     <!-- Bootstrap & jQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -67,4 +100,5 @@
     <script src="calculator.js"></script>
     
 </body>
+
 </html>
