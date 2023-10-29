@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    let chart;
     $('#calculatorForm').submit(function(e) {
         e.preventDefault();
         let equations = $('#equations').val().split(','); // Split equations by comma
@@ -48,7 +49,9 @@ $(document).ready(function() {
             }
         }
 
-        let chart = new Chart(canvas, {
+        if(chart) chart.destroy();
+
+        chart = new Chart(canvas, {
             type: 'line',
             data: {
                 labels: xValues,
@@ -76,6 +79,11 @@ $(document).ready(function() {
             }
         });
     });
+    
+    $('#resetBtn').on('click', () => {
+        if(chart) chart.destroy();
+    });
+    
 });
 
 function getRandomColor() {

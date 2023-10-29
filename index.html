@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/graph_fav.png" type="image/x-icon">
 </head>
@@ -38,7 +40,12 @@
                         <input type="number" class="form-control" id="maxX" value="10">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Graph</button>
+                    <div class="reset-container">
+                        <button type="reset" class="btn btn-outline-secondary">Reset Equation</button>
+                        <button type="button" class="btn btn-info" id="resetBtn">Reset Graph</button>
+                    </div>
                 </form>
+
             </div>
         </div>
         <div class="row mt-4">
