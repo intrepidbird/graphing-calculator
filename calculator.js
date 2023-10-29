@@ -1,5 +1,6 @@
 $(document).ready(function() {
     let chart;
+    
     $('#calculatorForm').submit(function(e) {
         e.preventDefault();
         let equations = $('#equations').val().split(','); // Split equations by comma
@@ -49,7 +50,7 @@ $(document).ready(function() {
             }
         }
 
-        if(chart) chart.destroy();
+        if (chart) chart.destroy();
 
         chart = new Chart(canvas, {
             type: 'line',
@@ -78,15 +79,25 @@ $(document).ready(function() {
                 }
             }
         });
+
+        // Adicione a classe "active" quando o gráfico for criado
+        $('.graphic-container').addClass('active');
     });
-    
+
     $('#resetBtn').on('click', () => {
-        if(chart) chart.destroy();
+        if (chart) chart.destroy();
+        // Remova a classe "active" ao clicar no botão "Reset"
+        $('.graphic-container').removeClass('active');
     });
-    
 });
 
 function getRandomColor() {
     // Generates a random hexadecimal color
     return '#' + Math.floor(Math.random()*16777215).toString(16);
+}
+
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 }

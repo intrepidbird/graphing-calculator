@@ -1,21 +1,31 @@
 /* Set the font for the entire document */
 body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
     font-family: Arial, sans-serif;
 }
 
 /* Style for the header */
 header {
     font-weight: 700;
+    font-weight: bold;
+}
+
+button{
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: rgba(0,0,0,0.1);
+    color: white;
 }
 
 /* Styling for the graph element */
 #graph {
     width: 100%;
-    height: 500px;
-}
-/* Set the font for the entire document */
-body {
-    font-family: Arial, sans-serif;
+    height: 400px;
 }
 
 /* Style for the header with a specific class name */
@@ -29,12 +39,6 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling for the graph element with a specific ID */
-#graph {
-    width: 100%;
-    height: 500px;
 }
 
 .reset-container{
@@ -56,23 +60,19 @@ body {
     height: 30px;
 }
 
-/* Your existing CSS styles... */
-
-/* Style for the header */
-header {
-    font-weight: bold;
+.dark-mode {
+    background-color: black;
+    color: #6610f2;
+}
+.darkbtn{
+    float: right;
+    margin-top: -40px;
 }
 
-/* Styling for the calculator section */
-#calculator {
-    background-color: #f7f7f7;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.graphic-container {
+    display: none;
 }
 
-/* Styling for the graph element */
-#graph {
-    width: 100%;
-    height: 400px;
+.graphic-container.active {
+    display: flex;
 }
