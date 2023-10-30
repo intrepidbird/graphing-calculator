@@ -6,6 +6,7 @@ $(document).ready(function() {
         let equations = $('#equations').val().split(','); // Split equations by comma
         let minX = parseFloat($('#minX').val());
         let maxX = parseFloat($('#maxX').val());
+        let selectedGraphType = $('#graphType').val(); // Read the selected graph type from the dropdown
 
         if (isNaN(minX) || isNaN(maxX) || minX >= maxX) {
             alert('Invalid range. Please check your input.');
@@ -53,7 +54,7 @@ $(document).ready(function() {
         if (chart) chart.destroy();
 
         chart = new Chart(canvas, {
-            type: 'line',
+            type: selectedGraphType,
             data: {
                 labels: xValues,
                 datasets: datasets,
