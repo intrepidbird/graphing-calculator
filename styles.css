@@ -14,19 +14,29 @@ header {
     border-radius: 20px;
 }
 
+header:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
 button{
     border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
 button:hover{
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     color: white;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1);
 }
 
 /* Styling for the graph element */
 #graph {
     width: 100%;
     height: 400px;
+}
+#graph:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 /* Style for the header with a specific class name */
