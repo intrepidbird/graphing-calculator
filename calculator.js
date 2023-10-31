@@ -8,8 +8,12 @@ $(document).ready(function() {
         let maxX = parseFloat($('#maxX').val());
         let selectedGraphType = $('#graphType').val(); // Read the selected graph type from the dropdown
 
-        if (isNaN(minX) || isNaN(maxX) || minX >= maxX) {
+        if (isNaN(minX) || isNaN(maxX) || minX > maxX) {
             alert('Invalid range. Please check your input.');
+            return;
+        }
+        if(selectedGraphType === 'Select graph'){
+            alert('No graph type selected. Please select any graph from the given list.');
             return;
         }
 
