@@ -8,7 +8,7 @@ $(document).ready(function() {
         let maxX = parseFloat($('#maxX').val());
         let selectedGraphType = $('#graphType').val(); // Read the selected graph type from the dropdown
 
-        if (isNaN(minX) || isNaN(maxX) || minX > maxX) {
+        if (isNaN(minX) || isNaN(maxX) || minX >= maxX) {
             alert('Invalid range. Please check your input.');
             return;
         }
