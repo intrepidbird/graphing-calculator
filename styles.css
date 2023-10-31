@@ -80,7 +80,7 @@ button:hover{
 }
 
 :root{
-    --bs-dark: #212529;
+    --bs-dark: #000;
   }
   
   .theme-container {
