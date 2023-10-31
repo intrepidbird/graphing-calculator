@@ -71,15 +71,6 @@ button:hover{
     height: 30px;
 }
 
-.dark-mode {
-    background-color: black;
-    color: #6610f2;
-}
-.darkbtn{
-    float: right;
-    margin-top: -40px;
-}
-
 .graphic-container {
     display: none;
 }
@@ -87,3 +78,50 @@ button:hover{
 .graphic-container.active {
     display: flex;
 }
+
+:root{
+    --bs-dark: #000;
+  }
+  
+  .theme-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .theme-container:hover {
+    opacity: 0.8;
+  }
+  
+  .shadow-dark {
+    background: linear-gradient(145deg, #23282c, #1e2125);
+    border: 2px purple solid;
+  }
+  
+  .shadow-light {
+    box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff;
+    border: 2px black solid;
+  }
+  
+  @keyframes change {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(1.4);
+    }
+  }
+  
+  .change {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-direction: alternate;
+  }
