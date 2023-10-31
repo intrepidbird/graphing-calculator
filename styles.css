@@ -1,32 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
 /* Set the font for the entire document */
 body {
     padding: 25px;
-    background-color: white;
-    color: black;
+   background-color: #ffffff;
+   color: #2b2b2b;
     font-size: 25px;
-    font-family: Arial, sans-serif;
+    font-family: 'Jost', sans-serif;
+
 }
 
 /* Style for the header */
 header {
-    font-weight: 700;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 20px;
+    padding: 0.5rem;
+    
 }
-
-header:hover{
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+.min_max{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
-
+.logo_title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+   }
+h1{
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+    color: #DAFF74;
+}
+h2{
+    font-family: 'Jost', sans-serif;
+    color: #ff6a00;
+}
+.bg-dark {
+    background-color: #ff6a00!important;
+}
+.mode-switch{
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+}
+.mode-switch:hover{
+    background-color: #000000;
+    border: none;
+    outline: none;
+}
 button{
     border-radius: 20px;
-    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+button[type=submit]{
+    outline: none;
+    border-radius: 20px;
+    border: none;
+}
+button[type=submit]:hover{
+    background-color: #000000;
+    color: #ffffff;
+    transition: .1s all ease-in-out;
+outline: none;
+transform: scale(1);
 }
 
 button:hover{
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2); 
     transform: scale(1.1);
 }
 
@@ -35,9 +86,7 @@ button:hover{
     width: 100%;
     height: 400px;
 }
-#graph:hover{
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
+
 
 /* Style for the header with a specific class name */
 .header-style {
@@ -46,10 +95,12 @@ button:hover{
 
 /* Styling for the calculator section with a specific ID */
 #calculator {
-    background-color: #f7f7f7;
+    background-color: #f5f5f5;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+   
+  
+   
 }
 
 .reset-container{
@@ -72,12 +123,11 @@ button:hover{
 }
 
 .dark-mode {
-    background-color: black;
-    color: #6610f2;
+    background-color: #0e0e0e;
+    color: #ffffff;
 }
-.darkbtn{
-    float: right;
-    margin-top: -40px;
+.card-dark{
+    background-color: #141414!important;
 }
 
 .graphic-container {
@@ -86,4 +136,15 @@ button:hover{
 
 .graphic-container.active {
     display: flex;
+}
+.form-control{
+    background: #ffffff;
+    border-radius: 99px;
+    height: 45px;
+}
+label{
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+   
+   
 }

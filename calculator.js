@@ -1,3 +1,4 @@
+let card = document.getElementById("calculator");
 $(document).ready(function() {
     let chart;
     
@@ -98,5 +99,7 @@ function getRandomColor() {
 
 function darkMode() {
     var element = document.body;
+  
     element.classList.toggle("dark-mode");
+    calculator.classList.toggle("card-dark");
 }
