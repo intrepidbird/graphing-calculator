@@ -24,9 +24,12 @@ $(document).ready(function() {
             try {
                 for (let x = minX; x <= maxX; x += 0.1) {
                     xValues.push(x);
-                    // Replace "^" with "**" in the equation
-                    let equationWithDoubleAsterisk = equation.replace(/\^/g, '**');
-                    let result = eval(equationWithDoubleAsterisk);
+                    // Replace "^" with "**" and append "Math." to mathematical expressions in the equation
+                    let equationForEval = equation;
+                    equationForEval = equationForEval.replace(/(sin|cos|tan|sqrt|log|exp|pi|e)(?=\()|pi|e/g, 'Math.$&');
+                    equationForEval = equationForEval.replace(/\^/g, '**');
+                    let result = eval(equationForEval);
+
 
                     // Check if the result is a valid number, not NaN
                     if (!isNaN(result)) {
