@@ -5,6 +5,8 @@ IntrepidGraph is a web-based mathematical graphing calculator that allows you to
 
 Please ⭐ our Repository!
 
+Big Thank You to everyone who contributed during Hacktoberfest!
+
 ## Table of Contents
 - [IntrepidGraph - A Mathematical Graphing Calculator](#intrepidgraph---a-mathematical-graphing-calculator)
   - [Table of Contents](#table-of-contents)
